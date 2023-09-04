@@ -1,0 +1,168 @@
+:root {
+  --primary-bg: #ffcd9e;
+  --secondary-bg: #282828;
+  --input-bg: #ffffff;
+
+  --text-primary: #282828;
+  --text-secondary: #ffffff;
+  --text-input: #888888;
+  --text-accent: #484848;
+  --border: #000000;
+
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+}
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  /* min-height: 100vh; */
+  font-size: 1rem;
+  font-family: "Inter";
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+li {
+  list-style: none;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+/* Typography and Colors*/
+.main-title {
+  font-size: 2.25rem;
+  color: var(--text-primary);
+  font-weight: var(--font-bold);
+}
+
+.description {
+  font-size: 1.25rem;
+  color: var(--text-accent);
+  font-weight: var(--font-medium);
+}
+.registration-title {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  font-weight: var(--font-extrabold);
+}
+.thank-you {
+  font-size: 2.5rem;
+  font-weight: var(--font-bold);
+}
+.register-button,
+.email-input {
+  font-size: 1.25rem;
+}
+.register-button {
+  background-color: var(--secondary-bg);
+  color: var(--text-secondary);
+  font-weight: var(--font-bold);
+}
+.register-button:hover {
+  background-color: #383838;
+}
+.email-input {
+  background-color: var(--input-bg);
+  color: var(--text-input);
+  font-weight: var(--font-semibold);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+}
+.privacy-policy {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: var(--font-medium);
+}
+.footer-info-item,
+.footer-list-item,
+.footer-info-email {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: var(--font-normal);
+}
+
+/* Layout */
+.main-section {
+  background-color: var(--primary-bg);
+  display: flex;
+  height: 70vh;
+  width: 100%;
+}
+.footer {
+  height: 30vh;
+  background-color: var(--secondary-bg);
+}
+.content-container {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 3.5rem 10rem;
+}
+.image-container {
+  width: 45%;
+  padding: 1em 5em;
+}
+.main-image {
+  width: 85%;
+}
+.thank-you {
+  display: none;
+}
+.email-registration {
+  display: flex;
+  column-gap: 1rem;
+  width: 100%;
+}
+.email-input {
+  width: 70%;
+  height: 4rem;
+
+  padding-left: 1em;
+}
+.register-button {
+  width: 40%;
+  height: 4rem;
+  border-radius: 8px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.privacy-policy {
+  padding-left: 2.5em;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3em 12em;
+}
+.footer-info {
+  text-align: right;
+}
+.footer-info-email {
+  margin-top: 3rem;
+}
+.footer-logo {
+  display: flex;
+  justify-content: end;
+  column-gap: 10px;
+}
